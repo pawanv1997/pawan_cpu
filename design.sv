@@ -1,13 +1,23 @@
-module division(x0,x1,y0,y1,z0,z1,z2,z3);
-  input x0,x1,y0,y1;
-  output reg z0,z1,z2,z3;
-  wire a1,a3,a4,b1;
-  and a(a1,x0,y1);
-  and b(z0,x0,y0);
-  and c(a3,y0,x1);
-  and d(a4,y1,x1);
-  xor aa(z1,a1,a3);
-  and bb(b1,a1,a3);
-  xor c3(z2,b1,a4);
-  and d3(z3,b1,a4);
+module top(op_code,rs1_in,rs2_in,cin,bin,result);
+  input [3:0] op_code;
+  input [15:0] rs1_in,rs2_in;
+  output reg [15:0] result;
+  wire [15:0]sum,sub,mulo,Res,inp1,inp2;
+  input cin, bin;
+  rs1_demux de1(.op_code(op_code),.rs1_in(rs1_in),.inp1(inp1));
+  rs2_demux de2(.op_code(op_code),.rs2_in(rs2_in),.inp2(inp2));
+  full_adder_16 ad1(.inp1(inp1), .inp2(inp2), .cin(cin),.sum(sum), .cout(cout));
+  a16bitsub su1(.inp1(inp1),.inp2(inp2),.bin(bin),.sub(sub),.bo(bo));
+  mul mu1(.inp1(inp1),.inp2(inp2),.mulo(mulo));
+  div di1(.inp1(inp1),.inp2(inp2),.Res(Res));
+  mux4x1_out ou1(.sum(sum),.mulo(mulo),.sub(sub),.Res(Res),.op_code(op_code),.result(result));
 endmodule
+
+`include "rs1_demux.sv"
+`include "rs2_demux.sv"
+`include "adder.sv"
+`include "sub.sv"
+`include "mul.sv"
+`include "div.sv"
+`include "mux4x1_result.sv"
+

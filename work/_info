@@ -1,0 +1,396 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pawan/cpu_practice/pawan_cpu
+T_opt
+!s110 1675688445
+VU3n`;i]EPfkBa?MWjoZZ91
+04 2 4 work tb fast 0
+=1-842b2b6825b5-63e0f9fd-ae643-2129
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7d;67
+R0
+va16bitsub
+Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
+Z3 !s110 1675763068
+!i10b 1
+!s100 W3bVi4cN7B0UcM4mmHbc_2
+IUC515Q1_?i>6A6GQl1JRT2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 !s105 testbench_sv_unit
+S1
+R0
+Z6 w1675665222
+Z7 8sub.sv
+Z8 Fsub.sv
+L0 1
+Z9 OL;L;10.7d;67
+r1
+!s85 0
+31
+Z10 !s108 1675763068.000000
+!s107 mux4x1_result.sv|div.sv|mul.sv|sub.sv|adder.sv|rs2_demux.sv|rs1_demux.sv|design.sv|testbench.sv|
+Z11 !s90 testbench.sv|+incdir+/home/pawan/cpu_practice/pawan_cpu/|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 +incdir+/home/pawan/cpu_practice/pawan_cpu/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+va4bitsub
+R2
+R3
+!i10b 1
+!s100 NNOM3biR_K1MmlooVTd`:1
+IkkHb8]8kHm5z]WQJVlAG12
+R4
+R5
+S1
+R0
+R6
+R7
+R8
+L0 16
+R9
+r1
+!s85 0
+31
+R10
+Z14 !s107 mux4x1_result.sv|div.sv|mul.sv|sub.sv|adder.sv|rs2_demux.sv|rs1_demux.sv|design.sv|testbench.sv|
+R11
+!i113 0
+R12
+R13
+R1
+vdiv
+R2
+R3
+!i10b 1
+!s100 cYak@NHz@igEPd9Vk3nLd2
+I2<LRE827jjfnUSoS;HFm50
+R4
+R5
+S1
+R0
+w1675665273
+8div.sv
+Fdiv.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vfull_adder
+R2
+R3
+!i10b 1
+!s100 0czV8i@_Lhh@F9:R;_kVn3
+IYohMCj8R<e:Q8Cgm@1ZGm0
+R4
+R5
+S1
+R0
+Z15 w1675685244
+Z16 8adder.sv
+Z17 Fadder.sv
+L0 61
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vfull_adder_16
+R2
+R3
+!i10b 1
+!s100 e`lSYjLmT<Z9E<7<=XoUf3
+IGVgYZ1;Ph[j[Z;lTYP7He2
+R4
+R5
+S1
+R0
+R15
+R16
+R17
+L0 3
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vfullsubtractor
+R2
+R3
+!i10b 1
+!s100 Fnd;2Enie0SmiQUEih>T81
+I]hE[BUAn>0i_LBm@z_gj[2
+R4
+R5
+S1
+R0
+R6
+R7
+R8
+L0 29
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vhalf_adder
+R2
+R3
+!i10b 1
+!s100 jkX<m6AVDBW2[nJUnHGVM3
+IES4@6?W2IdhK5>0obNhdf3
+R4
+R5
+S1
+R0
+R15
+R16
+R17
+L0 73
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vHalf_Subtractor
+R2
+R3
+!i10b 1
+!s100 a_7TCbmlDSCnKbKBm734B0
+Ii<>IENdQ@7OGmIA6`CO=B3
+R4
+R5
+S1
+R0
+R6
+R7
+R8
+L0 38
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+n@half_@subtractor
+vmul
+R2
+R3
+!i10b 1
+!s100 dEE^6W3QGC>MdEXN5a`^T2
+IknX]?nBZ83:eoHm7WR:_93
+R4
+R5
+S1
+R0
+w1675688419
+8mul.sv
+Fmul.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vmux4x1_out
+R2
+R3
+!i10b 1
+!s100 bZ<TORFfPIiGe=omYUO8T2
+IS_M;aTXmHi;<9=LIc2mKn0
+R4
+R5
+S1
+R0
+w1675665479
+8mux4x1_result.sv
+Fmux4x1_result.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vripple_carry_4_bit
+R2
+R3
+!i10b 1
+!s100 o7<C;`V46@=e2L8<;heW;2
+IQ;cE4gVBZ_XZljI[0ONKE1
+R4
+R5
+S1
+R0
+R15
+R16
+R17
+L0 45
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vrs1_demux
+R2
+R3
+!i10b 1
+!s100 hBR6Hdma88[nJG82I9bLd3
+I_Y:]>keLa7cm5Ok2=nM120
+R4
+R5
+S1
+R0
+w1675665343
+8rs1_demux.sv
+Frs1_demux.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vrs2_demux
+R2
+R3
+!i10b 1
+!s100 <j4PKGej46bXNVjJMS<ld2
+Ie;cm5NU_G[f67g>:SNlH?3
+R4
+R5
+S1
+R0
+w1675665393
+8rs2_demux.sv
+Frs2_demux.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vtb
+R2
+R3
+!i10b 1
+!s100 g?e>5E18<<5?3e@RLfBh>1
+IlJ2zi>fVLg=XO9:iJ4`;42
+R4
+R5
+S1
+R0
+w1675688349
+8testbench.sv
+Ftestbench.sv
+L0 2
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
+vtop
+R2
+R3
+!i10b 1
+!s100 0lc5;5n_iX[?md<m@56@N1
+I]XRdFLWhN`j]B]S@YAlRb3
+R4
+R5
+S1
+R0
+w1675754319
+8design.sv
+Fdesign.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R14
+R11
+!i113 0
+R12
+R13
+R1
