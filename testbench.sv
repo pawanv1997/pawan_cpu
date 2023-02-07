@@ -7,7 +7,7 @@ module tb;
   top t1(.op_code(op_code),.rs1_in(rs1_in),.cin(cin),.bin(bin),.rs2_in(rs2_in),.result(result));
   initial begin
     rs1_in=16'b110;
-    rs2_in=16'b100000000000001;
+    rs2_in=16'b001;
     op_code=4'b10;
     cin=0;
     bin=0;

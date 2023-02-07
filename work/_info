@@ -20,28 +20,28 @@ OL;O;10.7d;67
 R0
 va16bitsub
 Z2 DXx6 sv_std 3 std 0 22 d=_JfHTnXCN[H5FjiaJJc0
-Z3 !s110 1675763068
+Z3 !s110 1675770176
 !i10b 1
 !s100 W3bVi4cN7B0UcM4mmHbc_2
 IUC515Q1_?i>6A6GQl1JRT2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 !s105 testbench_sv_unit
 S1
-R0
-Z6 w1675665222
-Z7 8sub.sv
-Z8 Fsub.sv
+Z6 d/home/pawan/practice
+Z7 w1675767745
+Z8 8sub.sv
+Z9 Fsub.sv
 L0 1
-Z9 OL;L;10.7d;67
+Z10 OL;L;10.7d;67
 r1
 !s85 0
 31
-Z10 !s108 1675763068.000000
+Z11 !s108 1675770176.000000
 !s107 mux4x1_result.sv|div.sv|mul.sv|sub.sv|adder.sv|rs2_demux.sv|rs1_demux.sv|design.sv|testbench.sv|
-Z11 !s90 testbench.sv|+incdir+/home/pawan/cpu_practice/pawan_cpu/|
+Z12 !s90 testbench.sv|+incdir+/home/pawan/cpu_practice/pawan_cpu/|
 !i113 0
-Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z13 !s92 +incdir+/home/pawan/cpu_practice/pawan_cpu/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 +incdir+/home/pawan/cpu_practice/pawan_cpu/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 va4bitsub
 R2
@@ -52,46 +52,71 @@ IkkHb8]8kHm5z]WQJVlAG12
 R4
 R5
 S1
-R0
 R6
 R7
 R8
-L0 16
 R9
+L0 16
+R10
 r1
 !s85 0
 31
-R10
-Z14 !s107 mux4x1_result.sv|div.sv|mul.sv|sub.sv|adder.sv|rs2_demux.sv|rs1_demux.sv|design.sv|testbench.sv|
 R11
-!i113 0
+Z15 !s107 mux4x1_result.sv|div.sv|mul.sv|sub.sv|adder.sv|rs2_demux.sv|rs1_demux.sv|design.sv|testbench.sv|
 R12
+!i113 0
 R13
+R14
 R1
 vdiv
 R2
 R3
 !i10b 1
-!s100 cYak@NHz@igEPd9Vk3nLd2
-I2<LRE827jjfnUSoS;HFm50
+!s100 4F0ZQb;>N9DgmY0OX89IU2
+I3Z;4I=M:kW9cOMfK^LT]n0
 R4
 R5
 S1
-R0
-w1675665273
+R6
+R7
 8div.sv
 Fdiv.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
+R1
+vfull_add
+R2
+R3
+!i10b 1
+!s100 WhY72oeMGM9U3n`gKEW7U2
+IK2zXFkU2VnTiTXmU5ka3N1
+R4
+R5
+S1
+R6
+Z16 w1675769742
+Z17 8mul.sv
+Z18 Fmul.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R11
+R15
+R12
+!i113 0
+R13
+R14
 R1
 vfull_adder
 R2
@@ -102,21 +127,21 @@ IYohMCj8R<e:Q8Cgm@1ZGm0
 R4
 R5
 S1
-R0
-Z15 w1675685244
-Z16 8adder.sv
-Z17 Fadder.sv
+R6
+R7
+Z19 8adder.sv
+Z20 Fadder.sv
 L0 61
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vfull_adder_16
 R2
@@ -127,21 +152,21 @@ IGVgYZ1;Ph[j[Z;lTYP7He2
 R4
 R5
 S1
-R0
-R15
-R16
-R17
+R6
+R7
+R19
+R20
 L0 3
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vfullsubtractor
 R2
@@ -152,21 +177,21 @@ I]hE[BUAn>0i_LBm@z_gj[2
 R4
 R5
 S1
-R0
 R6
 R7
 R8
-L0 29
 R9
+L0 29
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vhalf_adder
 R2
@@ -177,21 +202,21 @@ IES4@6?W2IdhK5>0obNhdf3
 R4
 R5
 S1
-R0
-R15
-R16
-R17
+R6
+R7
+R19
+R20
 L0 73
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vHalf_Subtractor
 R2
@@ -202,47 +227,47 @@ Ii<>IENdQ@7OGmIA6`CO=B3
 R4
 R5
 S1
-R0
 R6
 R7
 R8
-L0 38
 R9
+L0 38
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 n@half_@subtractor
 vmul
 R2
 R3
 !i10b 1
-!s100 dEE^6W3QGC>MdEXN5a`^T2
-IknX]?nBZ83:eoHm7WR:_93
+!s100 ccLSfPOc]kTQR8MYVTWHP2
+I0I>HHWWo46<4]d]5EGZ]W2
 R4
 R5
 S1
-R0
-w1675688419
-8mul.sv
-Fmul.sv
-L0 1
-R9
+R6
+R16
+R17
+R18
+L0 13
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vmux4x1_out
 R2
@@ -253,21 +278,21 @@ IS_M;aTXmHi;<9=LIc2mKn0
 R4
 R5
 S1
-R0
-w1675665479
+R6
+R7
 8mux4x1_result.sv
 Fmux4x1_result.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vripple_carry_4_bit
 R2
@@ -278,21 +303,21 @@ IQ;cE4gVBZ_XZljI[0ONKE1
 R4
 R5
 S1
-R0
-R15
-R16
-R17
+R6
+R7
+R19
+R20
 L0 45
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vrs1_demux
 R2
@@ -303,21 +328,21 @@ I_Y:]>keLa7cm5Ok2=nM120
 R4
 R5
 S1
-R0
-w1675665343
+R6
+R7
 8rs1_demux.sv
 Frs1_demux.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vrs2_demux
 R2
@@ -328,46 +353,46 @@ Ie;cm5NU_G[f67g>:SNlH?3
 R4
 R5
 S1
-R0
-w1675665393
+R6
+R7
 8rs2_demux.sv
 Frs2_demux.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vtb
 R2
 R3
 !i10b 1
-!s100 g?e>5E18<<5?3e@RLfBh>1
-IlJ2zi>fVLg=XO9:iJ4`;42
+!s100 Q33Q>58=DLDJkgD77jmn=3
+I5TlNZ^laIcJ2H]h2ZIiM;0
 R4
 R5
 S1
-R0
-w1675688349
+R6
+w1675769873
 8testbench.sv
 Ftestbench.sv
 L0 2
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
 vtop
 R2
@@ -378,19 +403,19 @@ I]XRdFLWhN`j]B]S@YAlRb3
 R4
 R5
 S1
-R0
-w1675754319
+R6
+R7
 8design.sv
 Fdesign.sv
 L0 1
-R9
+R10
 r1
 !s85 0
 31
-R10
-R14
 R11
-!i113 0
+R15
 R12
+!i113 0
 R13
+R14
 R1
