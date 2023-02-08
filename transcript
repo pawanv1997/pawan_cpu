@@ -1,10 +1,8 @@
 # vsim -c tb -do "run -all;exit" 
-# Start time: 11:26:43 on Feb 08,2023
+# Start time: 12:31:49 on Feb 08,2023
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-6) -- Waiting for lock by "pawan@Neptune, pid = 31203". Lockfile is "/home/pawan/practice/work/_lock".
-# ** Fatal: (SIGINT) Compile interrupted.Break key hit
-# 
-# ** Note: Vopt Compiler exiting
+# Break key hit
+# ** Error: (vopt-1975) vopt failed -- received signal 2.
 # Error loading design
-# End time: 11:26:46 on Feb 08,2023, Elapsed time: 0:00:03
+# End time: 12:31:49 on Feb 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1

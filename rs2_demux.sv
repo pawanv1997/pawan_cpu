@@ -1,6 +1,7 @@
 module rs2_demux(op_code,rs2_in,inp2);
-  input [15:0]rs2_in;
-  output reg [15:0]inp2;
+  parameter N=16;
+  input [N-1:0]rs2_in;
+  output reg [N-1:0]inp2;
   input [3:0]op_code;
   always @(*)begin
     case(op_code)
