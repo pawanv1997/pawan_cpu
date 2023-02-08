@@ -1,58 +1,20 @@
-
-
-module full_adder_16(inp1, inp2, cin,sum, cout);
-  input [15:0] inp1,inp2;
-input cin;
-output [15:0] sum;
+module full_adder_16(inp1, inp2, cin, sum, cout);
+  parameter N=16;
+  input cin;
+  input [N-1:0] inp1,inp2;
+  wire [N:0]c;
+  wire [N-1:0]sum1;
+  output [N-1:0] sum;
 output cout;
-wire c1,c2,c3;
-
-ripple_carry_4_bit rca1 (
-  .inp1(inp1[3:0]),
-  .inp2(inp2[3:0]),
-.cin(cin), 
-.sum(sum[3:0]),
-.cout(c1));
-  ripple_carry_4_bit rca2(
-    .inp1(inp1[7:4]),
-    .inp2(inp2[7:4]),
-.cin(c1),
-.sum(sum[7:4]),
-.cout(c2));
-
-ripple_carry_4_bit rca3(
-  .inp1(inp1[11:8]),
-  .inp2(inp2[11:8]),
-.cin(c2),
-.sum(sum[11:8]),
-.cout(c3));
-
-ripple_carry_4_bit rca4(
-  .inp1(inp1[15:12]),
-  .inp2(inp2[15:12]),
-.cin(c3),
-.sum(sum[15:12]),
-.cout(cout));
-  always@(*)begin
-    if(cout>0)
-    $display(".........exception........");
-  end
-endmodule
-
-//4-bit Ripple Carry Adder
-////////////////////////////////////
-
-module ripple_carry_4_bit(inp1, inp2, cin, sum, cout);
-  input [3:0] inp1,inp2;
-input cin;
-wire c1,c2,c3;
-output [3:0] sum;
-output cout;
-
-  full_adder fa0(.inp1(inp1[0]), .inp2(inp2[0]),.cin(cin), .sum(sum[0]),.cout(c1));
-  full_adder fa1(.inp1(inp1[1]), .inp2(inp2[1]), .cin(c1), .sum(sum[1]),.cout(c2));
-  full_adder fa2(.inp1(inp1[2]), .inp2(inp2[2]), .cin(c2), .sum(sum[2]),.cout(c3));
-  full_adder fa3(.inp1(inp1[3]), .inp2(inp2[3]), .cin(c3), .sum(sum[3]),.cout(cout));
+genvar i;
+  generate
+    for(i=0; i<=N-1; i++)begin
+      assign c[0]=cin;
+      full_adder fa0(.inp1(inp1[i]), .inp2(inp2[i]),.cin(c[i]), .sum(sum1[i]),.cout(c[i+1]));
+  assign cout= c[N];
+      assign sum=sum1;
+    end
+  endgenerate
 endmodule
 
 //////////////////////////////
