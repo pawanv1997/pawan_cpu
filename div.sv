@@ -8,10 +8,9 @@ module div(inp1,inp2,Res);
   output reg[N-1:0] Res=0;
   reg [N-1:0] a1,b1;
   reg [N:0] p1;   
-    integer i;
+    genvar i;
 
-  always@ (inp1 or inp2)
-    begin
+ generate
         a1 = inp1;
         b1 = inp2;
         p1= 0;
@@ -26,6 +25,6 @@ module div(inp1,inp2,Res);
                 a1[0] = 1;
         end
         Res = a1;   
-    end 
+    endgenerate
 
 endmodule
