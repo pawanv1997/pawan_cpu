@@ -46,12 +46,12 @@ module comp_4_bit(inp1,inp2,a_less,a_greater,equal);
   
 endmodule
  
-module comp_16_bit(inp1,inp2,a_less,a_greater,equal);
+module comp_16_bit(inp1,inp2,comp);
   input [15:0]inp1,inp2;
-  output reg a_less,a_greater,equal;
+  output reg comp;
   wire t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12;
-  wire y1,y2,y3,y4,y5,y6;
-  
+  wire y1,y2,y3,y4,y5,y6,a_less,a_greater,equal;
+  wire [1:0]ope1;
   comp_4_bit c1(.inp1(inp1[3:0]),.inp2(inp2[3:0]),.a_less(t1),.a_greater(t2),.equal(t3));
   comp_4_bit c2(.inp1(inp1[7:4]),.inp2(inp2[7:4]),.a_less(t4),.a_greater(t5),.equal(t6));
   comp_4_bit c3(.inp1(inp1[11:8]),.inp2(inp2[11:8]),.a_less(t7),.a_greater(t8),.equal(t9));
@@ -79,6 +79,22 @@ module comp_16_bit(inp1,inp2,a_less,a_greater,equal);
   or b8(a_greater,y1,y3,y5,t11);
  // assign a_less = y2 | y4 | y6| t10;
   or b9(a_less,y2,y4,y6,t10);
+  assign ope1={a_less,a_greater};
+  always@(*)begin
+    case(ope1)
+      2'b00 : begin 
+        comp = equal;
+        $display("inp1=inp2");
+      end
+      2'b01 : begin
+        comp = a_greater;
+        $display("inp1>inp2");
+      end
+      2'b10 :begin
+        comp = a_less;
+        $display("inp1<inp2");
+      end
+    endcase
+  end
   
-endmodule
- 
+endmodule 

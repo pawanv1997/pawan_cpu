@@ -17,6 +17,9 @@ module rs2_demux(op_code,rs2_in,inp2);
       4'b0011 : begin 
         inp2 = rs2_in; 
       end
+     4'b0100 : begin
+        inp2 = rs2_in;
+      end
       default : begin 
         inp2 = 0 ;
       end

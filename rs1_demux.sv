@@ -9,6 +9,7 @@ parameter N=16;
       4'b0001 : inp1 = rs1_in;
       4'b0010 : inp1 = rs1_in;
       4'b0011 : inp1 = rs1_in;
+      4'b0100 : inp1 = rs1_in;
       default : begin 
         inp1= 0 ;
       end
